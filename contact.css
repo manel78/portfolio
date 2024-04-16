@@ -1,0 +1,59 @@
+body {
+    font-family: 'Chalkduster', fantasy; 
+    background-color: #b50aac; /* Fond violet clair */
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    text-align: center;
+    padding: 20px;
+    color: #6a0dad; 
+}
+
+h1 {
+    color: #6a0dad; 
+}
+
+button {
+    background-color: #ff7b98; /* Rose */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+button:hover {
+    background-color: #ee1fa9; 
+}
+
+#github-logo,
+#instagram-logo,
+#twitter-logo {
+    margin-bottom: 20px;
+}
+
+#github-logo img,
+#instagram-logo img,
+#twitter-logo img {
+    width: 100px; /* Ajustement de la largeur */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 50%; /* Rend les logos ronds */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+#github-logo span,
+#instagram-logo span,
+#twitter-logo span {
+    display: block;
+    margin-top: 10px;
+    color: #6a0dad; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+}
