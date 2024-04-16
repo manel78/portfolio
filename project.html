@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="C:\Users\manel\OneDrive\Bureau\labo dev web\project.css">
+    <style>
+        #content {
+            text-align: center; 
+        }
+        
+        #image-grid {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 30px; 
+        }
+        
+        .image-container {
+            text-align: center; 
+            width: 300px; 
+            height: auto; 
+            margin-bottom: 20px; 
+            border-radius: 10px; /* Coins arrondis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+            background-color: #fff; /* Fond blanc */
+            padding: 20px; /* Espacement à l'intérieur du conteneur */
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%; 
+            display: block; 
+            margin: 0 auto 10px; 
+        }
+        
+        .question-box {
+            margin-top: 20px; /* Espacement avec l'image */
+            padding: 10px; /* Espacement à l'intérieur de la zone de question */
+            background-color: #f9f9f9; /* Fond gris clair */
+            border-radius: 5px; /* Coins arrondis */
+            border: 1px solid #ccc; /* Bordure grise */
+        }
+        
+        .question-box textarea {
+            width: 100%; /* Largeur de la zone de texte */
+            height: 100px; /* Hauteur de la zone de texte */
+            resize: vertical; /* Redimensionnement vertical seulement */
+            margin-bottom: 10px; /* Espacement avec le bouton */
+        }
+        
+        .question-box button {
+            background-color: #ff7b98; /* Rose */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Coins arrondis */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transition douce */
+        }
+        
+        .question-box button:hover {
+            background-color: #ee1fa9; 
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Projects Page</h1>
+        <a href="portfolio.html"><button>Home</button></a>
+        <div id="image-grid">
+            <div class="image-container">
+                <img src="https://user-images.githubusercontent.com/59566389/195817038-9c9c5e04-60c7-4c9a-a40e-98f384bef5d7.png" alt="Image 1">
+                <p> RPG
+                    Le RPG sur un terminal de commande qui est mon tout premier projet est un jeu où le joueur interagit avec un monde virtuel en utilisant des commandes textuelles. Il incarne un personnage qui évolue dans un univers rempli de quêtes, de combats et d'exploration. Le joueur tape des commandes telles que "aller nord", "attaquer ennemi", ou "prendre objet" pour progresser dans le jeu. Les combats sont généralement gérés par des mécanismes de tour par tour, et le joueur peut améliorer les compétences de son personnage au fil du jeu. </p>
+                <div class="question-box">
+                    <textarea id="question1" placeholder="Posez votre question ici..."></textarea>
+                    <button onclick="clearTextarea('question1')">Envoyer</button>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.BNgCLnRf6c7hF26sMvw7wQHaD4&pid=Api&P=0&h=180" alt="Image 2">
+                <p> Hangman
+                    Dans un jeu du pendu sur un terminal de commande, le joueur doit deviner un mot secret en proposant des lettres une par une. Le jeu affiche initialement des tirets représentant chaque lettre du mot à deviner. À chaque fois que le joueur propose une lettre qui est présente dans le mot secret, le jeu révèle toutes les occurrences de cette lettre dans le mot. Si la lettre proposée n'est pas dans le mot secret, le joueur perd un essai. Le jeu continue jusqu'à ce que le joueur devine correctement le mot ou épuise tous ses essais.</p>
+                <div class="question-box">
+                    <textarea id="question2" placeholder="Posez votre question ici..."></textarea>
+                    <button onclick="clearTextarea('question2')">Envoyer</button>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.FQiCjcqBqaBqL-L9qNAZ5wHaHa&pid=Api&P=0&h=180" alt="Image 3">
+                <p> Hangman web
+                    Pour le hangman Web cette fois ci la difference est qu'on doit afficher les reponses le pendu lui meme sous forme d'interface graphique et c'etait une premiere</p>
+                <div class="question-box">
+                    <textarea id="question3" placeholder="Posez votre question ici..."></textarea>
+                    <button onclick="clearTextarea('question3')">Envoyer</button>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://cdn.vox-cdn.com/thumbor/AX5tz5tczCAwIb0qo6Sy0TpqtRI=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19328622/youtube_music_screenshot_pwa.jpg" alt="Image 4">
+                <p> Groupie Trackers
+                    Réalisé en Golang et introduit l'utilisation de Fyne. Cette application offre une plateforme pratique pour les utilisateurs qui veulent suivre leurs artistes préférés, explorer leurs concerts à venir et bien plus encore. En utilisant Fyne, les développeurs ont probablement trouvé un moyen efficace de créer une interface utilisateur conviviale pour cette application de musique. Cela montre comment différentes technologies peuvent être combinées pour répondre aux besoins des utilisateurs et ouvre des perspectives sur la manière dont les applications peuvent être développées dans le futur.</p>
+                <div class="question-box">
+                    <textarea id="question4" placeholder="Posez votre question ici..."></textarea>
+                    <button onclick="clearTextarea('question4')">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function clearTextarea(textareaId) {
+            document.getElementById(textareaId).value = "";
+        }
+    </script>
+</body>
+</html>
